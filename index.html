@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#070b16">
+<title>Glory Eleven</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud" hidden>
+  <div id="score"></div>
+  <button id="pauseBtn" aria-label="Pause"><span></span><span></span></button>
+  <canvas id="radar" width="336" height="220"></canvas>
+  <div id="hint"></div>
+  <div id="touch" hidden>
+    <div id="stickZone"><div id="stickBase"><div id="stickKnob"></div></div></div>
+    <div id="btns">
+      <button id="btnC" class="tb">LOB</button>
+      <button id="btnA" class="tb">PASS</button>
+      <button id="btnB" class="tb">SHOOT</button>
+    </div>
+  </div>
+</div>
+
+<div id="banner" hidden></div>
+<div id="ui"></div>
+<pre id="simout" hidden></pre>
+
+<script src="js/data.js"></script>
+<script src="js/match.js"></script>
+<script src="js/render.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
